@@ -21,5 +21,6 @@ class Car {
     }
     printDataCar() {
         console.table(this.driver);
+        console.table('Brand: ' + this.brand, '\nModel: ' + this.model);
     }
 }
