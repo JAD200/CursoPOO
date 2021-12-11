@@ -1,33 +1,18 @@
 <?php
-
-require_once('./Account.php');
-
+require_once('account.php');
 class Car {
-    private $id         = integer;
-    private $license    = string;
-    private $driver     = string;
-    private $passengers = integer;
+    public $id;
+    public $license;
+    public $driver;
+    public $passenger;
 
-    public function __contruct($license, $driver)
-    {
-        $this->license=$license;
-        $this->driver=$driver;
+    public function __construct($license, $driver){
+        $this->license = $license;
+        $this->driver = $driver;
     }
 
-    public function setPassengers($passengers)
-    {
-        $this->passengers=$passengers;
+    public function printDataCar() {
+        echo "-\nLicencia: $this->license Driver: ".$this->driver->name;
     }
-
-    public function getLicense()
-    {
-        return $this->license;
-    }
-
-    public function getDriver()
-    {
-        return $this->driver;
-    }
-
 }
 ?>
