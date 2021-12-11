@@ -10,5 +10,9 @@ class Main {
         Car car2 = new Car("QWF462", new Account("Paula Herrera", "PHN456"));
         car2.passengers = 3;
         car2.printDataCar();
+
+        System.out.println("Payment class");
+        Payment payment = new Payment(13213);
+        payment.printPaymentData();
     }
 }

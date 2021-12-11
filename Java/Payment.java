@@ -6,4 +6,8 @@ class Payment {
     public Payment(Integer id) {
         this.id = id;
     }
+
+    protected void printPaymentData() {
+        System.out.println("id: " + id);
+    }
 }
