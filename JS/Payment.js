@@ -4,7 +4,11 @@
 
 //* EcmaScript6
 class Payment {
-    constructor() {
-        this.id;
+    constructor(id) {
+        this.id = id;
+    }
+
+    showPayment() {
+            console.log('Payment id: ' + this.id)
     }
 }
