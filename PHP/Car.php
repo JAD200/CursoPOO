@@ -1,6 +1,7 @@
 <?php
 require_once('account.php');
 class Car {
+    //* Declaration of atributes
     public $id;
     public $license;
     public $driver;
