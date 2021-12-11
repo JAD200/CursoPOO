@@ -20,7 +20,13 @@ class Car {
         this.passenger;
     }
     printDataCar() {
-        console.table(this.driver);
-        console.table('Brand: ' + this.brand, '\nModel: ' + this.model);
+        console.group('Car data')
+        if (this.brand == undefined)
+            console.table(this.driver);
+        else {
+                console.table(this.driver);
+                console.log('Brand: ' + this.brand, '\nModel: ' + this.model);
+            }
+        console.groupEnd()
     }
 }
