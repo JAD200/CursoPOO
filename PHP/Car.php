@@ -15,9 +15,9 @@ class Car {
     public function printDataCar() {
         if ($this->passenger != null){
             echo "
-            -\nLicencia: $this->license
+            - Licencia: $this->license
             Driver: {$this->driver->name}
-            Número de pasajeros: $this->passenger \n";
+            Número de pasajeros: $this->passenger  ";
         }
     }
 
@@ -33,7 +33,6 @@ class Car {
         else {
             echo "Necesitas asignar 4 pasajeros";
         }
-
     }
 }
 ?>
